@@ -1043,6 +1043,10 @@ $curtain-menu-button-size: rem-calc(40);
 
       .contact-button-container {
         margin-top: 2.5em;
+        
+        @media screen and (max-width: 568px) and (max-height: 320px) {
+          margin-top: 1em;
+        }
 
         .contact-button {
           height: auto;
@@ -1228,14 +1232,37 @@ $curtain-menu-button-size: rem-calc(40);
         color: $bold-yellow;
       }
     }
+    
+    @media screen and (max-height: 320px) {
+      font-size: 2em;
+    }
+    
     @media screen and (min-width: 380px) and (min-height: 580px) {
       top: 1.25rem;
       right: 1.25rem;
+      font-size: 3em;
+    }
+    
+  }
+  
+  @media screen and (max-height: 320px) {
+    textarea[rows] {
+      height: 0;
     }
   }
-  textarea[rows] {
-    height: 0;
+  
+  @media screen and (min-height: 375px) {
+    textarea[rows] {
+      height: 6em;
+    }
   }
+  
+  @media screen and (min-height: 568px) {
+    textarea[rows] {
+      height: auto;
+    }
+  }
+  
 }
 
 .contact-me-section {
@@ -1304,6 +1331,10 @@ $curtain-menu-button-size: rem-calc(40);
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  
+  @media screen and (max-width: 320px) {
+    display: inline;
+  }
 
   input[type=submit] {
     border-radius: 5000px;
