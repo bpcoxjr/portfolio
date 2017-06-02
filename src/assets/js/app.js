@@ -11,6 +11,17 @@ $(document).ready(function() {
   setInterval(function() {
     determineVideoAndAudioStatus();
   }, 500);
+  
+  setInterval(function() {
+    var winWidth = $(window).width();
+    if (winWidth < 1000) {
+      $('#mobile-introduction').css('display', 'block');
+      $('#introduction').css('display', 'none');
+    } else {
+      $('#mobile-introduction').css('display', 'none');
+      $('#introduction').css('display', 'block');
+    }
+  }, 500);
 
   //show replay icon & introduction after video ends
   $('#landing-page-video').on('ended', function() {
@@ -40,34 +51,12 @@ $(document).ready(function() {
     }
     $('#learn-more').toggleClass('no-opacity opacity')
   })
-  
-  /*$("#audio-toggle").hover(function() {
-    var mainIcon = $('#audio-toggle').find('#volume-icon');
-    var secondaryIcon = $('#audio-toggle').find('#secondary-icon');
-    $(mainIcon).css('display', 'none');
-    $(secondaryIcon).css('display', 'block');
-    
-    var audio = document.getElementById("liftoff-audio");
-    $(this).on({
-      mouseleave: function() {
-        if (audio.muted) {
-          $(secondaryIcon).css('display', 'none');
-          $(mainIcon).css('display', 'block');
-          clearInterval(alternateAudioIcons);
-          setInterval(function() {
-            flipFlopIcons();
-          }, 500);
-        }
-      }
-    });
-    
-  })*/
 
   //toggle between volume icons when click occurs
   $("#audio-toggle").on('click', function() {
     $(this).find('i').toggleClass('fa-volume-up fa-volume-off');
   });
-  
+
   //initialize animatedModal
   $('#contact-button').animatedModal();
 
@@ -214,27 +203,6 @@ function setAudioToggle() {
 
   }, false);
 };
-
-/*var alternateAudioIcons = setInterval(function() {
-  flipFlopIcons();
-}, 500);
-
-function flipFlopIcons() {
-  var audioPlaying;
-  var audio = document.getElementById("liftoff-audio");
-  if (!audio.paused) {
-    audioPlaying = true;
-  } else {
-    audioPlaying = false;
-  }
-  if (audioPlaying && !audioClicked) {
-    $('#volume-icon').toggleClass('fa-volume-up', 'fa-volume-off');
-    $('#volume-icon').toggleClass('fa-volume-off', 'fa-volume-up');
-  } else if (audioPlaying && audioClicked) {
-    console.log('hello');
-    $('#volume-icon').addClass('fa-volume-up');
-  }
-};*/
 
 // handle scaling of video container...
 function scaleVideoContainer() {

@@ -442,6 +442,28 @@ $curtain-menu-button-size: rem-calc(40);
       transition: 0.3s ease-in-out;
     }
   }
+  
+  .mobile-introduction {
+    color: $plain-old-white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    text-align: center;
+    z-index: 100;
+    display: none;
+
+    .big-name {
+      font-size: 4vw;
+      font-family: 'Monoton', cursive;
+      transition: 0.3s ease-in-out;
+    }
+
+    .big-title {
+      font-size: 2vw;
+      font-family: 'Black Ops One', cursive;
+      transition: 0.3s ease-in-out;
+    }
+  }
 
   .no-opacity {
     opacity: 0;
