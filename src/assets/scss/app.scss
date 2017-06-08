@@ -1190,11 +1190,9 @@ $curtain-menu-button-size: rem-calc(40);
 
   .modal-close-button {
     position: fixed;
-    top: 0.25rem;
-    right: 0.25rem;
+    top: 0.5rem;
+    right: 0.5rem;
     z-index: 300;
-    width: 4rem;
-    height: 4rem;
     border-radius: 5000px;
     cursor: pointer;
 
@@ -1231,12 +1229,6 @@ $curtain-menu-button-size: rem-calc(40);
     }
   }
   
-  @media screen and (min-height: 568px) {
-    textarea[rows] {
-      height: auto;
-    }
-  }
-  
 }
 
 .contact-me-section {
@@ -1247,11 +1239,18 @@ $curtain-menu-button-size: rem-calc(40);
 
 .contact-me-form {
   input[type=email],
-  input[type=text],
-  textarea {
+  input[type=text] {
     border-radius: 20px;
     margin-bottom: 1.5rem;
     resize: none;
+  }
+  
+  textarea {
+    border-radius: 20px;
+    margin-bottom: 0;
+    resize: none;
+    height: 10rem;
+    margin-bottom: 0.5rem;
   }
 
   p {
@@ -1293,6 +1292,7 @@ $curtain-menu-button-size: rem-calc(40);
   .contact-me-header {
     color: $bold-yellow;
     font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
   }
   padding: 0 1em;
   
@@ -1312,6 +1312,7 @@ $curtain-menu-button-size: rem-calc(40);
     border-radius: 5000px;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 1.5rem;
     color: $not-quite-navy;
     background-color: $bold-yellow;
     font-family: 'Open Sans', sans-serif;
