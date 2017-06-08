@@ -246,7 +246,7 @@ $social-icon-padding: 0.5rem;
   @if $social-bar-position == right {
     right: $social-bar-transformation * -1;
   }
-  @media screen and (min-width: 725px) {
+  @media screen and (min-width: 1000px) {
     display: block;
   }
 
@@ -650,103 +650,62 @@ $curtain-menu-button-size: rem-calc(40);
 .video-container video.fillWidth {
   width: 100% !important;
 }
-// about section styles
 
+// about section styles
 .about {
-  border-top: 15vh solid $plain-old-white;
-  border-bottom: 7vh solid $plain-old-white;
   text-align: left;
   box-shadow: 0 2px 5px rgba(44, 62, 80, 0.6);
   background: #fff;
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    grid-template-rows: 1fr;
-    @media screen and (max-width: 775px) {
-      grid-template-columns: 1fr;
+  .about-patrick {
+    background-color: $white;
+    padding: 10vh 1rem;
+    
+    .intro-sentence {
+      font-size: 2em;
+      font-family: 'Alfa Slab One', cursive;
+      color: $not-quite-navy;
+      background: linear-gradient(to bottom, $steel-blue, $kinda-purple);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-
-    .img-container {
-      z-index: 10;
-      left: 10%;
-      border-radius: 2px;
-
-      img {
-        border-radius: 2px;
-      }
-    }
-
-    .card-container {
-      z-index: 20;
-
-      .card {
-        margin-bottom: 0;
-        font-size: 1em;
-        border: 1px solid #b3b3b3;
-        border-radius: 2px;
-        @media screen and (max-width: 775px) {
-          border: none;
-        }
-
-        .card-section {
-          @media screen and (max-width: 775px) {
-            padding: 2rem;
-          }
-
-          .intro-sentence {
-            font-size: 2em;
-            font-family: 'Alfa Slab One', cursive;
-            color: $not-quite-navy;
-            background: linear-gradient(to bottom, $steel-blue, $kinda-purple);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-
-          .intro-paragraph {
-            font-family: 'Gentium Book Basic', serif;
-            line-height: 1.25;
-            color: $plain-old-gray;
-            .available {
-              color: $kinda-purple;
-              &:hover {
-                text-decoration: underline;
-                cursor: pointer;
-              }
-            }
-          }
+    
+    .intro-paragraph {
+      font-family: 'Gentium Book Basic', serif;
+      line-height: 1.25;
+      color: $plain-old-gray;
+      .available {
+        color: $kinda-purple;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
         }
       }
     }
 
-    .align-middle {
-      align-self: center;
-    }
-    @media print, screen and (min-width: 815px) {
-      .medium-push-1 {
-        position: relative;
-        //left: 8.33333%; 
-      }
+    .separator-left {
+      text-align: left;
+      @include clearfix;
 
-      .medium-pull-1 {
+      &::after {
         position: relative;
-        left: -8.33333%;
+        width: 5rem;
+        border-bottom: 0.125rem solid $primary-color;
+        margin: 0.3rem auto 0;
+        margin-left: 0;
       }
     }
-
-    .no-grid-warning {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      z-index: 10000;
-      color: red;
-      left: 0;
-      top: 0;
-      background-color: #fff;
+    
+    .author-image {
       text-align: center;
-      padding: 20px;
     }
+
   }
+  
+  @media screen and (max-width: 775px) {
+    border-top: none;
+  }
+  
 }
 
 .skills {
@@ -758,7 +717,7 @@ $curtain-menu-button-size: rem-calc(40);
     top: 0;
     left: 0;
     background: url('../../assets/img/keyboard.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.80);
     background-size: cover;
     will-change: transform;
     z-index: -1;
@@ -847,7 +806,7 @@ $curtain-menu-button-size: rem-calc(40);
           .skill-desc {
             padding: 0 1em;
             color: $plain-old-gray;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             font-family: 'Gentium Book Basic', serif;
 
             .web-access {
@@ -995,7 +954,7 @@ $curtain-menu-button-size: rem-calc(40);
       text-align: center;
 
       .visit-button {
-        border: 2px solid $bold-yellow;
+        border: 2px solid $kinda-purple;
         padding: 0.75em 1em;
         border-radius: 25px;
         margin: 2em 0;
@@ -1006,7 +965,7 @@ $curtain-menu-button-size: rem-calc(40);
         color: $not-quite-navy;
 
         &:hover {
-          color: $bold-yellow;
+          color: $plain-old-white;
           background: $not-quite-navy;
           border: 2px solid $not-quite-navy;
           box-shadow: 0 0 30px $plain-old-gray;
@@ -1114,7 +1073,7 @@ $curtain-menu-button-size: rem-calc(40);
     bottom: 3em;
     width: 100%;
     text-align: center;
-    @media screen and (min-width: 725px) {
+    @media screen and (min-width: 1000px) {
       display: none;
     }
     $social-icon-button-bg: $plain-old-white;
@@ -1224,8 +1183,8 @@ $curtain-menu-button-size: rem-calc(40);
     }
   }
 }
-// contact modal CSS
 
+// contact modal CSS
 .contact-modal {
   display: table;
   position: absolute;
@@ -1373,8 +1332,8 @@ $curtain-menu-button-size: rem-calc(40);
     }
   }
 }
-//mobile nav menu styles
 
+//mobile nav menu styles
 .curtain-menu-button {
   position: fixed;
   top: 1.25rem;
@@ -1458,4 +1417,3 @@ $curtain-menu-button-size: rem-calc(40);
     }
   }
 }
-/*** blog styles ***/
