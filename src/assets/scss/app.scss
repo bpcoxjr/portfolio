@@ -430,6 +430,25 @@ $curtain-menu-button-size: rem-calc(40);
   border-right: none;
   border-left: none;
   position: relative;
+  
+  .mobile-slogan-container {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    display: block;
+    height: auto;
+    .mobile-slogan {
+      font-family: 'Black Ops One', cursive;
+      font-size: 4vw;
+      color: $plain-old-white;
+      padding: 1.25rem 0 0 1.25rem;
+    }
+    
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
+    
+  }
 
   .introduction {
     color: $plain-old-white;
