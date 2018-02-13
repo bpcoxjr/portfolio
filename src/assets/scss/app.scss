@@ -1110,7 +1110,7 @@ $curtain-menu-button-size: rem-calc(40);
         text-shadow: 2px 2px 2px rgba(44, 62, 80, 0.3);
         @include alfa;
         font-size: 2rem;
-        @media screen and (min-width: 740px) {
+        @media screen and (min-width: 815px) {
           font-size: 4rem;
         }
       }
