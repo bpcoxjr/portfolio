@@ -11,7 +11,7 @@ $(document).ready(function() {
   setInterval(function() {
     determineVideoAndAudioStatus();
   }, 500);
-  
+
   setInterval(function() {
     var winWidth = $(window).width();
     if (winWidth < 1000) {
@@ -145,6 +145,12 @@ $(document).ready(function() {
     }, 2000);
   });
 
+  $('#resume-link').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#resume').offset().top
+    }, 2000);
+  });
+
   $('#contact-link').click(function() {
     $('html, body').animate({
       scrollTop: $('#contact').offset().top
@@ -156,7 +162,7 @@ $(document).ready(function() {
       scrollTop: $('#about').offset().top
     }, 1000);
   });
-  
+
   $('#available').click(function() {
     $('html, body').animate({
       scrollTop: $('#contact').offset().top
