@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="icon" type="image/png" href="./assets/img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./assets/img/favicon-16x16.png" sizes="16x16" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Black+Ops+One|Gentium+Book+Basic|Monoton|Roboto|Alegreya:400i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
@@ -31,7 +31,7 @@
             <li><a href="index.html#resume" id="resume-link">Resume</a></li>
             <li><a href="index.html#contact" id="contact-link">Contact</a></li>
             <li>
-              <a href="https://www.displayblog.io" target="_blank"><button type="button" class="button hollow topbar-responsive-button">Blog</button></a>
+              <a href="https://www.displayblog.io"><button type="button" class="button hollow topbar-responsive-button">Blog</button></a>
             </li>
           </ul>
         </div>
@@ -44,7 +44,7 @@
         <div class="bar2"></div>
       </div>
     </div>
-
+    
     <!-- the menu  -->
     <div class="curtain-menu">
       <div class="curtain"></div>
@@ -54,15 +54,12 @@
         <ul class="curtain-menu-list menu vertical">
           <li><a href="index.html" id="curtain-home-link">Home</a></li>
           <li><a href="index.html#about" id="curtain-about-link">About</a></li>
-          <li><a href="index.html#skills" id="curtain-skills-link">Skills</a></li>
           <li><a href="index.html#work" id="curtain-work-link">Work</a></li>
-          <li><a href="index.html#resume" id="curtain-resume-link">Resume</a></li>
           <li><a href="index.html#contact" id="curtain-contact-link">Contact</a></li>
-          <li><a href="https://www.displayblog.io" id="curtain-blog-link" target="_blank">Blog</a></li>
+          <li><a href="https://www.displayblog.io" id="curtain-blog-link">Blog</a></li>
         </ul>
       </div>
     </div>
-
     <ul class="sticky-social-bar">
       <li class="social-icon">
         <a href="http://www.github.com/bpcoxjr" target="_blank">
@@ -130,7 +127,7 @@
         <i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i>
       </div>
     </section>
-
+    
     <!-- about section -->
     <section class="about" id="about">
       <div class="about-patrick">
@@ -152,7 +149,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- skills section -->
     <section class="skills" id="skills">
       <div class="my-skillset-container row">
@@ -191,16 +188,61 @@
         </div>
       </div>
     </section>
-
+    
     <!-- work examples section -->
     <section class="work" id="work">
       <div class="work-header-container">
         <h1 class="work-header">My Work</h1>
         <p class="work-subheader">Projects I've conceived and built from the ground up.</p>
       </div>
+    
+      <div class="work-feature-block row reverse-row">
+        <div class="columns small-12 medium-7">
+          <img class="work-feature-block-image" src="./assets/img/coffee_finder.png" alt="">
+        </div>
+        <div class="columns small-12 medium-5 flex-column">
+          <div>
+            <h2 class="work-feature-block-header">Triangle Coffee Finder</h2>
+            <p class="project-description">Triangle Coffee Finder is a fun little side project I built to help users find independent coffee shops in the triangle area (Raleigh/Durham/Chapel Hill) of North Carolina.  Answer a few short questions about what you're looking for and get a top notch recommendation that will probably become your new favorite hangout spot.
+            </p>
+            <ul class="tech-list">
+              <li class="pill html-pill">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5</span>
+              </li>
+              <li class="pill css-pill">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+              </li>
+              <li class="pill js-pill">
+                  <i class="fas fa-code"></i>
+                  <span>JavaScript</span>
+              </li>
+              <li class="pill jquery-pill">
+                  <i class="fas fa-code"></i>
+                  <span>jQuery</span>
+              </li>
+              <li class="pill sass-pill">
+                  <i class="fas fa-code"></i>
+                  <span>SASS</span>
+              </li>
+              <li class="pill gulp-pill">
+                  <i class="fab fa-gulp"></i>
+                  <span>Gulp</span>
+              </li>
+            </ul>
+            <div class="visit-button-container">
+              <a href="http://trianglecoffeefinder.com" target="_blank"><button class="visit-button draw-border">
+                Visit Website
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
       <div class="work-feature-block row novadine">
         <div class="columns small-12 medium-7">
-
           <img class="work-feature-block-image" src="./assets/img/ND_screenShot.png" alt="">
         </div>
         <div class="columns small-12 medium-5 flex-column">
@@ -209,23 +251,23 @@
             <p class="project-description">NovaDine provides digital ordering solutions to regional and national restaurant chains.  Offerings include online ordering via mobile app and web browser, featuring patented group ordering technology and curbside check-in for an unmatched customer service experience.  I redesigned and rebuild NovaDine's corporate website from the ground up in the fall of 2016, with an unmitigated focus on presenting site content in a simple, elegant package.  The result is a website that is both beautiful and enjoyable for the user to consume, with the most pertinent information easily accessible with just a couple of clicks or taps.</p>
             <ul class="tech-list">
               <li class="pill html-pill">
-                  <i class="fa fa-html5"></i>
+                  <i class="fab fa-html5"></i>
                   <span>HTML5</span>
               </li>
               <li class="pill css-pill">
-                  <i class="fa fa-css3"></i>
+                  <i class="fab fa-css3-alt"></i>
                   <span>CSS3</span>
               </li>
               <li class="pill js-pill">
-                  <i class="fa fa-code"></i>
+                  <i class="fas fa-code"></i>
                   <span>JavaScript</span>
               </li>
               <li class="pill php-pill">
-                  <i class="fa fa-code"></i>
+                  <i class="fas fa-code"></i>
                   <span>PHP</span>
               </li>
               <li class="pill wordpress-pill">
-                  <i class="fa fa-wordpress"></i>
+                  <i class="fab fa-wordpress-simple"></i>
                   <span>Wordpress</span>
               </li>
             </ul>
@@ -249,23 +291,23 @@
             </p>
             <ul class="tech-list">
               <li class="pill html-pill">
-                  <i class="fa fa-html5"></i>
+                  <i class="fab fa-html5"></i>
                   <span>HTML5</span>
               </li>
               <li class="pill css-pill">
-                  <i class="fa fa-css3"></i>
+                  <i class="fab fa-css3-alt"></i>
                   <span>CSS3</span>
               </li>
               <li class="pill js-pill">
-                  <i class="fa fa-code"></i>
+                  <i class="fas fa-code"></i>
                   <span>JavaScript</span>
               </li>
               <li class="pill sass-pill">
-                  <i class="fa fa-code"></i>
+                  <i class="fas fa-code"></i>
                   <span>SASS</span>
               </li>
               <li class="pill nyt-pill">
-                  <i class="fa fa-newspaper-o"></i>
+                  <i class="far fa-newspaper"></i>
                   <span>NYT Web API</span>
               </li>
             </ul>
@@ -279,7 +321,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- resume section -->
     <section class="resume" id="resume">
       <div class="resume-callout-container">
@@ -290,7 +332,7 @@
         <a class="resume-download" href="assets/resume/bpcoxjrresume2017.pdf" target="_blank">Download</a>
       </div>
     </section>
-
+    
     <!--  contact me section -->
     <section class="contact" id="contact">
       <div class="top-contact">
@@ -320,7 +362,7 @@
         <p class="trademark">Handbuild by B&#46; Patrick Cox&#44; Jr &#46;<i class="fa fa-copyright copyright"></i>2017</p>
       </footer>
     </section>
-
+    
     <div class="contact-modal" id="animatedModal">
       <div class="modal-close-button close-animatedModal" id="modal-close-button">
         <!-- modal close image here -->
@@ -342,7 +384,7 @@
         </div>
       </section>
     </div>
-
+    
 
     <script src="assets/js/app.js"></script>
     <script src="https://hookforms.com/api/v1/form.js"></script>

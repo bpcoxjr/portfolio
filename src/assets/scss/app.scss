@@ -106,6 +106,8 @@ $wordpress-blue: #21759b;
 $javascript-yellow: #f0db4f;
 $php-blue: #6082BB;
 $sass-pink: #c69;
+$gulp-red: #CF4647;
+$jquery-blue: #0769AD;
 
 /*** sticky social bar variables ***/
 $social-bar-position: left; // Change this value to `right` for changing sidebar's position.
@@ -993,6 +995,10 @@ $curtain-menu-button-size: rem-calc(40);
         background-color: $javascript-yellow;
       }
 
+      .jquery-pill {
+        background-color: $jquery-blue;
+      }
+
       .php-pill {
         background-color: $php-blue;
       }
@@ -1003,6 +1009,10 @@ $curtain-menu-button-size: rem-calc(40);
 
       .nyt-pill {
         background-color: $not-quite-black;
+      }
+
+      .gulp-pill {
+        background-color: $gulp-red;
       }
     }
 
