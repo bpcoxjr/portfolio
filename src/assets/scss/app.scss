@@ -106,6 +106,8 @@ $wordpress-blue: #21759b;
 $javascript-yellow: #f0db4f;
 $php-blue: #6082BB;
 $sass-pink: #c69;
+$gulp-red: #CF4647;
+$jquery-blue: #0769AD;
 
 /*** sticky social bar variables ***/
 $social-bar-position: left; // Change this value to `right` for changing sidebar's position.
@@ -320,7 +322,7 @@ html {
       color: inherit;
       background-color: inherit;
 
-      > .fa {
+      > .fab {
         padding: $social-icon-padding;
         width: 2rem;
         height: 2rem;
@@ -333,7 +335,7 @@ html {
           margin-right: 0.5rem;
         }
 
-        &.fa-github {
+        &.fa-github-alt {
           background-color: $social-brand-github;
         }
 
@@ -993,6 +995,14 @@ $curtain-menu-button-size: rem-calc(40);
         background-color: $javascript-yellow;
       }
 
+      .jquery-pill {
+        background-color: $jquery-blue;
+      }
+
+      .gulp-pill {
+        background-color: $gulp-red;
+      }
+
       .php-pill {
         background-color: $php-blue;
       }
@@ -1179,7 +1189,7 @@ $curtain-menu-button-size: rem-calc(40);
         margin-left: $social-icon-button-space-between;
       }
 
-      .fa {
+      .fab {
         background: none;
         @include absolute-center;
         z-index: 1;
